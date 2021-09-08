@@ -1,0 +1,33 @@
+﻿<Window x:Class="Klimatobservationer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Klimatobservationer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="453" Width="800">
+    <Grid>
+        <Button x:Name="btnPresentObservers" Content="Visa observatörer" HorizontalAlignment="Left" Margin="241,237,0,0" VerticalAlignment="Top" Click="btnPresentObservations_Click"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="17,303,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="148,303,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="lstObservers" Margin="17,23,568,153" MouseDoubleClick="lstObservers_MouseDoubleClick"/>
+        <Label Content="Förnamn" HorizontalAlignment="Left" Margin="17,277,0,0" VerticalAlignment="Top"/>
+        <Label Content="Efternamn" HorizontalAlignment="Left" Margin="148,277,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddObserver" Content="Lägg till observatör" HorizontalAlignment="Left" Margin="162,326,0,0" VerticalAlignment="Top" Click="btnAddObserver_Click"/>
+        <Button x:Name="btnRemoveObserver" Content="Radera observatör" HorizontalAlignment="Left" Margin="241,262,0,0" VerticalAlignment="Top" Click="btnRemoveObserver_Click"/>
+        <Label x:Name="lblName" Content="" HorizontalAlignment="Left" Margin="241,123,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAddTemp" HorizontalAlignment="Left" Margin="241,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ange mätvärde:" HorizontalAlignment="Left" Margin="238,141,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddMeasurement" Content="Registrera" HorizontalAlignment="Left" Margin="303,185,0,0" VerticalAlignment="Top" Click="btnAddMeasurement_Click"/>
+        <ListBox x:Name="lstObservations" Margin="381,37,22,269" MouseDoubleClick="lstObservations_MouseDoubleClick" />
+        <Label Content="Mätpunkter:" HorizontalAlignment="Left" Margin="381,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="Observatörer:" HorizontalAlignment="Left" Margin="10,-3,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtChangeValue" HorizontalAlignment="Left" Margin="381,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnChange" Content="Ändra data" HorizontalAlignment="Left" Margin="381,389,0,0" VerticalAlignment="Top" Click="btnChange_Click"/>
+        <ListBox x:Name="lstEditMeasurements" Margin="381,217,22,101" MouseDoubleClick="lstEditMeasurements_MouseDoubleClick" />
+        <RadioButton x:Name="radioTemp" Content="Temperatur" HorizontalAlignment="Left" Margin="241,25,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioBirch" Content="Fjällbjörk" HorizontalAlignment="Left" Margin="241,40,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioFox" Content="Fjällräv" HorizontalAlignment="Left" Margin="241,55,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
